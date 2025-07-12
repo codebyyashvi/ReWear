@@ -37,7 +37,7 @@ const goBack = () => {
       <h2 className="text-2xl font-bold mb-4">Available Items</h2>
       <div className="grid grid-cols-2 gap-4">
         {items.map((item) => (
-          <ItemCard key={item.id} item={item} />
+          <ItemCard key={item._id} item={item} />
         ))}
       </div>
       <button

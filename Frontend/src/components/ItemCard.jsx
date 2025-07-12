@@ -7,7 +7,7 @@ export default function ItemCard({ item }) {
       <img src={item.image_url} className="w-full h-40 object-cover" />
       <h3 className="text-lg font-bold">{item.title}</h3>
       <p>{item.size} | {item.condition}</p>
-      <Link to={`/item/${item.id}`} className="text-blue-500">View Details</Link>
+      <Link to={`/item/${item._id}`} className="text-blue-500">View Details</Link>
     </div>
   );
 }
